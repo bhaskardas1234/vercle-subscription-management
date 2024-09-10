@@ -25,8 +25,8 @@ root.render(
     </CookiesProvider>
 );
 
-  // export const SERVER_URL = "http://13.60.48.195:5000"
- export const SERVER_URL = "http://localhost:5000" 
+  export const SERVER_URL = "https://vercle-subscription-management-nuap.vercel.app:5000"
+    //  export const SERVER_URL = "http://localhost:5000" 
 // export const SERVER_URL = "https://staging.mbiapis.setucodeverse.net"
 // export const SERVER_URL = "http://54.235.10.201:5000"
 
