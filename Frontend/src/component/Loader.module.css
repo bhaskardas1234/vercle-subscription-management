@@ -1,0 +1,12 @@
+.loader-container {
+  height: 98.8vh;
+  width: 98.86vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: scroll;
+}
+
+.loader-container::-webkit-scrollbar {
+  display: none;
+}

@@ -1,0 +1,32 @@
+/* .alert {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+}
+.alert-inner {
+    transform: translateX(-50%);
+    padding:16px;
+    width: fit-content;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    font-family: Roboto;
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+.home-container button{
+    margin: 16px;
+    background-color: #00698F;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 20px;
+    cursor: pointer;
+} */

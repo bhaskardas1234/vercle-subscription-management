@@ -1,0 +1,33 @@
+.articleDetail {
+  background-color: #f0f0f0; /* Example background color */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Example box shadow */
+  text-align: center;
+  max-width: 80%; /* Adjust as needed */
+  justify-content: center;
+  align-items: center;
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+.articleDetail h2 {
+  margin-top: 0;
+}
+
+.articleDetail p {
+  margin-bottom: 0;
+}
+.body.dark-mode{
+  background-color: #1e1e1e;
+  color: #fff;
+  height: 100vh;
+
+}
+.articleDetail.dark-mode{
+  background-color: #1e1e1e;
+  color: #fff;
+  box-shadow: 0 0 15px rgba(209, 200, 200, 0.735); 
+}.title.dark-mode{
+  color: #fff;
+}

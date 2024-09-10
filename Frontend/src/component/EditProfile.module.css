@@ -1,0 +1,274 @@
+.edit-profile-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: #666;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+}
+
+.back-image {
+    cursor: pointer;
+    padding-left: 5px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.head {
+    width: 52%;
+    background-color: #6495ED;
+    color: #FFF;
+    height: 150px;
+}
+
+.left {
+    width: 43%;
+    text-align: left;
+}
+
+.right {
+    width: 57%;
+    text-align: left;
+}
+
+.change-profile-picture {
+    color: #666;
+    margin: 0;
+}
+
+.profile-image {
+    position: relative;
+}
+
+.bottom {
+    width: 35%;
+}
+
+.name-input,
+.dob-input,
+.email-input,
+.phone-input {
+    padding: 5px;
+    width: -webkit-fill-available;
+    border-radius: 8px;
+    border: 1px solid #666;
+}
+
+.gender-type {
+    display: flex;
+    gap: 10px;
+}
+
+.gender-option {
+    flex: 1;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 6px;
+    border: 1px solid #ECE8E8;
+    color: #ECE8E8;
+    cursor: pointer;
+}
+
+.gender-option:hover {
+    border: 1px solid #666;
+    color: #666;
+}
+
+.gender-option.selected {
+    border: 1px solid #666;
+    color: #666;
+}
+
+.name-p,
+.dob-p,
+.email-p,
+.phone-p,
+.gender-p {
+    text-align: left;
+}
+
+.update {
+    width: 25%;
+}
+
+.update-btn {
+    color: white;
+    background-color: #6495ED;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: -webkit-fill-available;
+    padding: 10px 20px;
+    font-weight: 700;
+}
+
+.update button:hover {
+    background-color: #0056b3;
+}
+
+/* Dark mode */
+.edit-profile-container.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.name-input.dark-mode,
+.dob-input.dark-mode,
+.email-input.dark-mode,
+.phone-input.dark-mode {
+    background-color: #1e1e1e;
+    color: #FFF;
+}
+
+
+
+@media (max-width: 768px) {
+    .head {
+        width: 90%;
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    .bottom {
+        width: 90%;
+    }
+
+    .update {
+        width: 80%;
+    }
+
+    .gender-type {
+        flex-direction: column;
+    }
+
+    .gender-option {
+        text-align: center;
+    }
+}
+
+@media (max-width: 389px) and (max-height: 850px) {
+    .edit-profile-container {
+        height: auto;
+        padding: 5px;
+    }
+
+    .head {
+        width: 100%;
+        padding: 15px 5px;
+    }
+
+    .bottom {
+        width: 100%;
+    }
+
+    .update {
+        width: 90%;
+    }
+
+    .name-input,
+    .dob-input,
+    .email-input,
+    .phone-input {
+        padding: 3px;
+    }
+
+    .gender-type {
+        gap: 5px;
+    }
+
+    .gender-option {
+        font-size: 12px;
+        padding: 3px;
+    }
+
+    .update-btn {
+        padding: 8px 15px;
+    }
+}
+
+@media (max-width: 540px) and (max-height: 720px) {
+    .edit-profile-container {
+        height: auto;
+        padding: 5px;
+    }
+
+    .head {
+        width: 100%;
+        padding: 15px 5px;
+    }
+
+    .bottom {
+        width: 100%;
+    }
+
+    .update {
+        width: 90%;
+    }
+
+    .name-input,
+    .dob-input,
+    .email-input,
+    .phone-input {
+        padding: 3px;
+    }
+
+    .gender-type {
+        gap: 5px;
+    }
+
+    .gender-option {
+        font-size: 12px;
+        padding: 3px;
+    }
+
+    .update-btn {
+        padding: 8px 15px;
+    }
+}
+
+@media (max-width: 1024px) and (max-height: 1368px) {
+    .edit-profile-container {
+        padding: 15px;
+    }
+
+    .head {
+        width: 80%;
+        padding: 15px 10px;
+        height: auto;
+    }
+
+    .bottom {
+        width: 80%;
+    }
+
+    .update {
+        width: 70%;
+    }
+
+    .name-input,
+    .dob-input,
+    .email-input,
+    .phone-input {
+        padding: 4px;
+    }
+
+    .gender-type {
+        gap: 8px;
+    }
+
+    .gender-option {
+        font-size: 13px;
+        padding: 4px;
+    }
+
+    .update-btn {
+        padding: 9px 18px;
+    }
+}

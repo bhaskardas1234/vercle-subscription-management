@@ -1,0 +1,192 @@
+.wallets-container {
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: 'Roboto', sans-serif;
+    justify-content: center;
+    /* padding: 20px; */
+}
+
+.info-wallet {
+    margin: 0;
+}
+
+.amounts {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.amounts p.selected {
+    border: 2px solid #6495ED; /* Adjust the border style as needed */
+}
+
+.choose-amount {
+    display: flex;
+    justify-content: center;
+}
+
+.choose-amount-p {
+    width: 50%;
+}
+
+.amounts-first-row,
+.amounts-second-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    gap: 15px;
+}
+
+.amounts-100,
+.amounts-200,
+.amounts-500,
+.amounts-other {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #DCDCDC;
+    margin: 0;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+.add-fund {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #6495ED;
+    color: #6495ED;
+    border-radius: 10px;
+    outline: none;
+}
+
+.update-button {
+    cursor: pointer;
+    border-radius: 20px;
+    background: #6495ED;
+    border: none;
+    padding: 10px;
+    width: 30%;
+    color: #FFF;
+    font-size: 15px;
+}
+
+.transactions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+.arrow-image {
+    height: 30%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.arrow-image-down {
+    transform: rotate(90deg);
+}
+
+.transaction-history {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.first,
+.second {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    width: 50%;
+}
+
+.first:hover,
+.second:hover {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+}
+
+.transaction-name {
+    display: flex;
+}
+
+.transaction-time-p {
+    margin: 0;
+    color: #a1a1a1;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+}
+
+.right-rupees {
+    font-weight: 700;
+}
+
+.right-image {
+    height: 12px;
+}
+
+@media (max-width: 600px) {
+    .choose-amount-p,
+    .amounts-first-row,
+    .amounts-second-row,
+    .add-fund,
+    .update-button,
+    .first,
+    .second {
+        width: 80%;
+    }
+
+    .amounts-100,
+    .amounts-200,
+    .amounts-500,
+    .amounts-other {
+        padding: 10px;
+    }
+
+    .transaction-name {
+        /* flex-direction: column; */
+        align-items: center;
+    }
+
+    .right {
+        /* flex-direction: column; */
+        align-items: center;
+    }
+
+    .transactions {
+        /* flex-direction: column; */
+        align-items: center;
+        gap: 10px;
+    }
+
+    .arrow-image {
+        height: 20px;
+    }
+
+    .right-rupees,
+    .transaction-time-p {
+        font-size: 14px;
+    }
+}
+
+  
+.wallets-container.dark-mode {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+.add-fund.dark-mode{
+    background-color: #e7dede;
+    color: #1e1e1e;
+}
+.info-wallet.dark-mode{
+    color: #ebe0e0;
+}

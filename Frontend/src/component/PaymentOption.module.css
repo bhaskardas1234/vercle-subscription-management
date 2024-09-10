@@ -1,0 +1,41 @@
+.option-container {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.choose-option-p {
+    margin: 0;
+    font-size: 20px;
+}
+
+.option-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.razorpay,
+.wallet {
+    background-color: blue;
+    color: white;
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.razorpay:hover,
+.wallet:hover {
+    background-color: rgb(39, 39, 93);
+}
+
+.option-container.dark-mode{
+    background-color: #1e1e1e;
+    color: #fff;
+}

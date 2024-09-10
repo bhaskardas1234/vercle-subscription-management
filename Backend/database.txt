@@ -1,0 +1,63 @@
+CREATE TABLE public."MBI_USER_INFO"
+(
+    id SERIAL PRIMARY KEY,
+    name text Not null,
+    email text  null,
+    phone_number text  null,
+    dob text not null
+    token text not null,
+    sessions JSONB NOT NULL,
+    active_sessions jsonb,
+    last_login timestamp without time zone DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE public."MBI_USER_INFO_V2"
+(
+    id SERIAL PRIMARY KEY,
+    name text Not null,
+    email text  null,
+    phone_number text  null,
+    dob text not null,
+    gender text not null,
+    token text not null,
+    sessions JSONB NOT NULL,
+    active_sessions jsonb,
+    created_at INTEGER,
+    last_login INTEGER,
+    user_hash text not null
+);
+
+CREATE TABLE IF NOT EXISTS public.user_subscription
+(
+    id serial primary key,
+    user_id integer NOT NULL,
+    start_day integer not null,
+    end_day integer not null,
+    s_id integer NOT NULL,
+    content_details jsonb NOT NULL,
+    user_hash text not NULL
+)
+
+CREATE TABLE IF NOT EXISTS public.subscription
+(
+    id serial primary key,
+    druation text  NOT NULL,
+    price integer not null,
+    subscription_type text COLLATE pg_catalog."default"
+)
+
+CREATE TABLE IF NOT EXISTS public.payment_details
+(
+    id integer serial primary key,
+    phone_number text COLLATE pg_catalog."default" NOT NULL,
+    email text COLLATE pg_catalog."default" NOT NULL,
+    subscription_details integer NOT NULL,
+    start_day timestamp without time zone DEFAULT CURRENT_TIMESTAMP,
+    order_id text COLLATE pg_catalog."default" NOT NULL,
+    payment_id text COLLATE pg_catalog."default" NOT NULL,
+    payment_status text COLLATE pg_catalog."default" NOT NULL,
+    final_amount numeric NOT NULL,
+    discount numeric NOT NULL,
+    cupon_code text COLLATE pg_catalog."default"
+ 
+)

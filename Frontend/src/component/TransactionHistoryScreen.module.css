@@ -1,0 +1,110 @@
+
+.transaction-history {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.back {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.all-transactions {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 20px;
+    width: 50%;
+}
+
+.transaction-item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    box-shadow: 0 0 3px rgba(12, 11, 11, 0.925); 
+}
+
+
+
+.transaction-name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.transaction-name-image {
+    width: 20px;
+}
+
+.transaction-time {
+    margin-left: 10px;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.right-rupees {
+    font-weight: bold;
+}
+
+
+.right-image {
+    width: 15px;
+}
+
+.wallet-debit {
+    color: red;
+}
+
+.article-purchase {
+    color: green;
+}
+
+.upi {
+    color: green;
+}
+
+.transaction-history.dark-mode {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+.back.dark-mode{
+    background-color: #1e1e1e;
+}
+.transaction-item.dark-mode{
+    background-color: #1e1e1e;
+    color: white;
+    box-shadow: 0 0 3px rgba(236, 232, 232, 0.925); 
+}
+@keyframes cardHover {
+    0% {
+      transform: translateY(0);
+    }
+  
+    50% {
+      transform: translateY(-5px);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+  }
+.transaction-item:hover {
+    animation: cardHover 0.5s ease;
+}
+.transaction-item.dark-mode:hover {
+    /* background-color: #423f3f; */
+    animation: cardHover 0.5s ease;
+}
